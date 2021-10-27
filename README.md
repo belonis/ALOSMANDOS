@@ -1,0 +1,2 @@
+# ALOSMANDOS
+Información de videojuegos
