@@ -1,0 +1,88 @@
+#ribbon{
+    background-color: rgb(0, 0, 0);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(20, 20, 20, 20) 25px, rgba(20, 20, 20, 20) 40px);
+}
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+#separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+#separator-ribbon .content{
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#brawl{
+    background-color: rgb(220,53,69);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+#brawl img{
+    position: relative;
+    margin-top: -35px;
+
+}
+element.style {
+    padding: 70px 0px 0px 0px;
+}
+
+.card-border {
+  border: solid 10px white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all ease-out 0.5s;
+}
+
+.card-border:hover{
+  transform: scale(1.05);
+}
+#smite{
+    background: rgb(255,255,255);
+    background: url(../img/fondo-zeus.png),linear-gradient(0deg, rgba(16,69,56,0.8) 0%, rgba(0,0,0,1) 57%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+}
+
+#personajes{
+        background: url(../img/fondo-fortnite-morado.png),linear-gradient(42deg, rgba(46,16,53) 57%, rgba(16,69,56,0.8) 0%);
+        background-repeat: no-repeat, repeat;
+        background-position: center center;
+        background-size: 100%, auto;
+}
+
+.fortnite {
+  cursor: pointer;
+  transition: all ease-out 0.2s;
+}
+
+.fortnite:hover {
+  transform: scale(1.05);
+}
+
+.fortnite-name {
+  background-color: rgba(255,255,255,0.4);
+  color: purple;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+}

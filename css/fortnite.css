@@ -1,0 +1,105 @@
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('video/video.mp4') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+}
+element.style {
+    background-color: rgb(0, 0, 0);
+    background-image: repeating-linear-gradient(
+45deg, transparent, transparent 25px, rgb(0 0 0) 25px, rgba(20, 20, 20, 20) 40px);
+}
+#ribbon{
+    background-color: rgb(0, 0, 0);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(20, 20, 20, 20) 25px, rgba(20, 20, 20, 20) 40px);
+}
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+#separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+#separator-ribbon .content{
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#brawl {
+    background-color: rgb(0,123,255);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+#brawl img{
+    position: relative;
+    margin-top: -35px;
+
+}
+
+#play{
+  background-color: rgb(0,0,0)
+}
