@@ -48,7 +48,7 @@ header .overlay {
   }
 
   header video {
-    display: none;
+    display: block;
   }
 }
 
